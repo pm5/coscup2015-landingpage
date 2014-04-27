@@ -1,0 +1,138 @@
+body {
+  font-family: arial, sans-serif, verdana;
+  height:5000px;
+  color:white;
+  margin:0;
+  padding:0;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  background: #96E9EE;
+  display: block;
+  border-bottom: 3px solid black;
+  position: relative;
+  z-index: 1;
+  padding: 10px 0 0 10px;
+}
+
+a {
+  text-decoration:none;
+  font-weight:bold;
+  color: black;
+}
+
+.sharing {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+}
+
+.sharing span {
+  padding-left: 5px;
+}
+.sharing ul, .sharing li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sharing li {
+  float: left;
+  margin-right: 8px;
+}
+
+.logo {
+  overflow:hidden;
+  width: 90px;
+  height: 33px;
+  display:inline-block;
+  float:left;
+  background:url(../images/logo.png) no-repeat;
+  margin-right: 20px;
+}
+
+
+h1 {
+  font-size: 150%;
+  color: black;
+  margin-top: 5px;
+}
+
+h2 {
+  color: #3da550;
+  font-size: 350%;
+  top: 150px;
+  position:absolute;
+  text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+p {
+  font-size: 22px;
+  width: 560px;
+  position: absolute;
+  left: 200px;
+  top: 250px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+  line-height: 150%;
+}
+
+p > a {
+  text-decoration:none;
+  font-weight:bold;
+  color: #96E9EE;
+}
+
+#next {
+  position: absolute;
+  left: 450px;
+}
+
+.content {
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:url(../images/background.png);
+}
+
+#photos {
+  position: absolute;
+  width: 60%;
+  min-width: 750px;
+  top: -10%; bottom: -10%;
+  right: -10%;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+
+#photos img {
+  position: absolute;
+  border: none;
+  transition: transform .3s, opacity .3s;
+  -webkit-transition: -webkit-transform .3s, opacity .3s;
+  -o-transition: -o-transform .3s, opacity .3s;
+}
+
+#photos img:hover {
+  opacity: 1!important;
+  -webkit-transform: scale(1.8) rotate(-10deg);
+  -moz-transform: scale(1.8) rotate(-10deg);
+  -ms-transform: scale(1.8) rotate(-10deg);
+  -o-transform: scale(1.8) rotate(-10deg);
+  z-index: 2;
+}
+
+#archives {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  color: black;
+  background: #999; 
+  padding: 10px;
+  border-radius: 5px;
+}
