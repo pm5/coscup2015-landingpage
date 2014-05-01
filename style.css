@@ -172,3 +172,33 @@ p > a {
   border-radius: 0.5rem;
   font-size: 1.6rem;
 }
+
+
+@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  .logo {
+    height: 4rem;
+    margin-right: 0;
+    width: 12rem;
+  }
+  .sharing {
+    top: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    left: 12rem;
+  }
+  #next {
+    left: 38rem;
+  }
+}
+
+@media screen and (max-device-width: 470px), screen and (max-width: 470px) {
+  html {
+    font-size: 6px;
+  }
+}

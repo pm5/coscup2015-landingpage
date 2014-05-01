@@ -64,6 +64,11 @@ function init_image_cloud(jarallax) {
 
 jQuery(function ($) {
   var jarallax = new Jarallax();
-  init_image_cloud(jarallax);
   init_jarallax(jarallax);
+  if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|B2G)/)) {
+    $(document.body).addClass('fallback');
+    jarallax.jumpToProgress(0.3, 1000, 24);
+    return; // No $.imageCloud
+  }
+  init_image_cloud(jarallax);
 });
