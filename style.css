@@ -246,7 +246,5 @@ body ul, body li {
   }
   #archives {
     top: 40rem;
-    width: calc(100%);
-    min-width: 30rem;
   }
 }
