@@ -98,11 +98,12 @@ body ul, body li {
 
 
 #info {
+  font-family: monospace;
   font-size: 2rem;
   padding: 1rem 2rem;
   position: absolute;
   border-radius: 0.3rem;
-  top: 18rem;
+  top: 18.5rem;
   background: rgba(33, 33, 33, 0.9);
   color: white;
 }
