@@ -60,13 +60,17 @@ body ul, body li {
   background:url(images/background.png);
 }
 
+.fallback .content {
+  background:url(images/background_tablet.png);
+}
+
 .header {
   width: 100%;
   height: 5rem;
   background: #96E9EE;
   border-bottom: 0.2rem solid black;
   position: relative;
-  padding: 1rem 0 0 1rem;
+  padding-top: 0.5rem;
   color: #333;
 }
 
@@ -87,7 +91,7 @@ body ul, body li {
   position: absolute;
   font-size: 1.6rem;
   right: 1.5rem;
-  top: 1rem;
+  top: 1.5rem;
 }
 
 #sharing li {
@@ -191,21 +195,23 @@ body ul, body li {
 
 
 @media screen and (max-device-width: 768px), screen and (max-width: 768px) {
-  html {
-    font-size: 8px;
-  }
-  #logo {
-    height: 4rem;
-    margin-right: 0;
-    width: 12rem;
+  .content {
+    background:url(images/background_tablet.png);
   }
   #sharing {
-    top: 5rem;
+    top: 6rem;
+  }
+  #call-for-action li a {
+    background: black;
+    color: #96E9EE;
   }
 }
 
 @media screen and (max-device-width: 470px), screen and (max-width: 470px) {
   html {
     font-size: 6px;
+  }
+  .content {
+    background:url(images/background_phone.png);
   }
 }
