@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8" />
-  <title>COSCUP 2014</title>
+  <title data-l10n-id="title">COSCUP 2014</title>
   
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -31,13 +31,17 @@
 
   <!--site css-->
   <link rel="stylesheet" type="text/css" href="style.css" title="default" media="screen, handheld"/>
+
+  <!--locales-->
+  <link rel="localization" href="locales/manifest.json">
+
 </head>
 <body>
   <div class="content">
     <div id="photos"></div>
     <div class="header">
       <a href="http://coscup.org" id="logo"></a>
-      <span>Conference for Open Source Coders, Users and Promoters</span>
+      <span data-l10n-id="header">Conference for Open Source Coders, Users and Promoters</span>
     </div>
     <ul id="sharing">
       <li><a href="https://www.facebook.com/coscup" target="_blank"><img src="images/social_fb.png"/><span>facebook</span></a></li>
@@ -47,12 +51,12 @@
     </ul>
     
     <div id="info">
-      2014/7/19 - 2014/7/20<span class="separator"> | </span>
-      Academia Sinica, Taipei, Taiwan (中研院)
+      <span data-l10n-id="date">2014/7/19 - 2014/7/20</span><span class="separator"> | </span>
+      <span data-l10n-id="location">Academia Sinica, Taipei, Taiwan</span>
     </div>
     <ul id="call-for-action">
-      <li><a target="_blank" href="http://coscup2014-program.kktix.cc/events/cfp">Call for Proposal</a></li>
-      <li><a target="_blank" href="mailto:sponsorship@coscup.org">Call for Sponsor</a></li>
+      <li><a target="_blank" href="http://coscup2014-program.kktix.cc/events/cfp" data-l10n-id="callForProposal">Call for Proposal</a></li>
+      <li><a target="_blank" href="mailto:sponsorship@coscup.org" data-l10n-id="callForSponsor">Call for Sponsor</a></li>
     </ul>
     <div id="archives">
       <span class="separator"> | </span><a target="_blank" href="http://coscup.org/2006/">2006</a>
@@ -69,6 +73,7 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.imagecloud.js"></script>
   <script type="text/javascript" src="js/coscup.js"></script>
+  <script type="text/javascript" src="js/l20n.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-12923351-1']);
