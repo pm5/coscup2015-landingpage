@@ -1,48 +1,10 @@
-function init_jarallax(jarallax) {
-  
-  jarallax.setDefault('h2, #p1, #p2, #p3, #next', {opacity:'0'});
-  jarallax.setDefault('#p1, #p2, #p3', {marginLeft:'-100rem'});
-  
-  jarallax.addAnimation('#head1',[{progress: "0%", left:"-80rem"}, {progress: "10%", left: "10rem"}]);
-  jarallax.addAnimation('#head1',[{progress: "10%", left:"10rem"}, {progress: "40%", left: "15rem"}]);
-  jarallax.addAnimation('#head1',[{progress: "0%", opacity:"1"}, {progress: "30%", opacity:"1"}]);
-  jarallax.addAnimation('#head1',[{progress: "30%", opacity:"1"}, {progress: "40%", opacity:"0"}]);
-
-  jarallax.addAnimation('#p1',[{progress: "15%", opacity:"0"}, {progress: "20%", opacity:"1"}]);
-  jarallax.addAnimation('#p1',[{progress: "20%", opacity:"1"}, {progress: "30%"}]);
-  jarallax.addAnimation('#p1',[{progress: "30%", opacity:"1"}, {progress: "40%", opacity:"0"}]);
-  jarallax.addAnimation('#p1',[{progress: "15%", marginLeft:"0"}, {progress: "40%"}]);
-
-  jarallax.addAnimation('#next',[{progress: "20%", opacity:"0"}, {progress: "30%", opacity:"1"}]);
-  jarallax.addAnimation('#next',[{progress: "20%", top:"30rem"}, {progress: "30%", top:"40rem"}]);
-  jarallax.addAnimation('#next',[{progress: "30%", opacity:"1"}, {progress: "40%", opacity:"0"}]);
-  
-  jarallax.addAnimation('#head2',[{progress: "30%", left:"-80rem"}, {progress: "40%", left: "10rem"}]);
-  jarallax.addAnimation('#head2',[{progress: "40%", left:"10rem"}, {progress: "70%", left: "15rem"}]);
-  jarallax.addAnimation('#head2',[{progress: "30%", opacity:"1"}, {progress: "60%", opacity:"1"}]);
-  jarallax.addAnimation('#head2',[{progress: "60%", opacity:"1"}, {progress: "70%", opacity:"0"}]);
-
-  jarallax.addAnimation('#p2',[{progress: "45%", opacity:"0"}, {progress: "50%", opacity:"1"}]);
-  jarallax.addAnimation('#p2',[{progress: "50%", opacity:"1"}, {progress: "60%"}]);
-  jarallax.addAnimation('#p2',[{progress: "60%", opacity:"1"}, {progress: "70%", opacity:"0"}]);     
-  jarallax.addAnimation('#p2',[{progress: "45%", marginLeft:"0"}, {progress: "70%"}]);
-  
-  jarallax.addAnimation('#head3',[{progress: "60%", left:"-80rem"}, {progress: "70%", left: "10rem"}]);
-  jarallax.addAnimation('#head3',[{progress: "70%", left:"10rem"}, {progress: "100%", left: "15rem"}]);
-  jarallax.addAnimation('#head3',[{progress: "60%", opacity:"1"}, {progress: "100%", opacity:"1"}]);
-  
-  jarallax.addAnimation('#p3',[{progress: "75%", opacity:"0"}, {progress: "80%", opacity:"1"}]);
-  jarallax.addAnimation('#p3',[{progress: "80%", opacity:"1"}, {progress: "100%"}]);
-  jarallax.addAnimation('#p3',[{progress: "75%", marginLeft:"0"}, {progress: "100%"}]);
-}
-
-function init_image_cloud(jarallax) {
+function init_image_cloud() {
   var options = {
     gridSize: 4,
     beforeImageLoad: function ($img, r, R) {
       $img.css('opacity', 0);
     },
-    query: 'select * from flickr.photos.search(0,50) where user_id="51987472@N04" ' +
+    query: 'select * from flickr.photos.search(0,100) where user_id="51987472@N04" ' +
       'and sort="interestingness-desc" ' +
       'and api_key = "64a8192d359871faf7686f8c2cbecf05"',
     imageLoad: function ($img, r, R) {
@@ -53,9 +15,6 @@ function init_image_cloud(jarallax) {
       return (w > 0.1)?w:0;
     },
     photoListType: 'flickr',
-    onDone: function() {
-      jarallax.jumpToProgress(0.3, 1000, 24);
-    },
     shuffle: false
   };
 
@@ -63,12 +22,9 @@ function init_image_cloud(jarallax) {
 }
 
 jQuery(function ($) {
-  var jarallax = new Jarallax();
-  init_jarallax(jarallax);
   if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|B2G)/)) {
     $(document.body).addClass('fallback');
-    jarallax.jumpToProgress(0.3, 1000, 24);
     return; // No $.imageCloud
   }
-  init_image_cloud(jarallax);
+  init_image_cloud();
 });
