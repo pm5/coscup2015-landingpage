@@ -1,82 +1,116 @@
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url("http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url("http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url("http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff") format("woff");
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
-  font-family: arial, sans-serif, verdana;
-  height:2000px;
-  color:white;
-  margin:0;
-  padding:0;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial;
+  margin: 0;
+  padding: 0;
+  height: 200rem;
+}
+
+body a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+body ul, body li {
+  list-style: none;
 }
 
 .header {
-  height: 50px;
   width: 100%;
+  height: 5rem;
   background: #96E9EE;
-  display: block;
-  border-bottom: 3px solid black;
+  border-bottom: 0.2rem solid black;
   position: relative;
-  z-index: 1;
-  padding: 10px 0 0 10px;
-}
-
-a {
-  text-decoration:none;
-  font-weight:bold;
-  color: black;
+  padding: 1rem 0 0 1rem;
 }
 
 .sharing {
   position: absolute;
-  right: 15px;
-  top: 0px;
+  font-size: 1.6rem;
+  right: 1.5rem;
+  top: 0;
 }
 
 .sharing span {
-  padding-left: 5px;
-}
-.sharing ul, .sharing li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  padding-left: 0.5rem;
 }
 
 .sharing li {
   float: left;
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 
 .logo {
-  overflow:hidden;
-  width: 90px;
-  height: 33px;
-  display:inline-block;
-  float:left;
-  background:url(../images/logo.png) no-repeat;
-  margin-right: 20px;
+  width: 9rem;
+  height: 3.3rem;
+  float: left;
+  background: url(images/logo.png) no-repeat;
+  margin-right: 2rem;
 }
 
-
 h1 {
-  font-size: 150%;
+  font-size: 2.4rem;
   color: black;
-  margin-top: 5px;
+  margin-top: 0.5rem;
 }
 
 h2 {
   color: #3da550;
-  font-size: 350%;
-  top: 150px;
+  font-size: 5.6rem;
+  top: 14rem;
   position:absolute;
-  text-shadow: 0.1em 0.1em 0.05em #333;
+  text-shadow: 0.05em 0.05em 0.05em #333;
 }
 
 p {
-  font-size: 22px;
-  width: 560px;
+  color: white;
+  font-size: 2rem;
+  width: 56rem;
   position: absolute;
-  left: 200px;
-  top: 250px;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 10px 20px;
-  border-radius: 10px;
+  left: 20rem;
+  top: 25rem;
+  background: rgba(69, 69, 69, 0.9);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
   line-height: 150%;
 }
 
@@ -88,20 +122,20 @@ p > a {
 
 #next {
   position: absolute;
-  left: 450px;
+  left: 45rem;
 }
 
 .content {
   position:fixed;
   width:100%;
   height:100%;
-  background:url(../images/background.png);
+  background:url(images/background.png);
 }
 
 #photos {
   position: absolute;
   width: 60%;
-  min-width: 750px;
+  min-width: 75rem;
   top: -10%; bottom: -10%;
   right: -10%;
   transform: rotate(10deg);
@@ -120,6 +154,7 @@ p > a {
 
 #photos img:hover {
   opacity: 1!important;
+  transform: scale(1.8) rotate(-10deg);
   -webkit-transform: scale(1.8) rotate(-10deg);
   -moz-transform: scale(1.8) rotate(-10deg);
   -ms-transform: scale(1.8) rotate(-10deg);
@@ -129,10 +164,11 @@ p > a {
 
 #archives {
   position: absolute;
-  bottom: 20px;
-  left: 50px;
+  bottom: 2rem;
+  left: 5rem;
   color: black;
   background: #999; 
-  padding: 10px;
-  border-radius: 5px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
 }

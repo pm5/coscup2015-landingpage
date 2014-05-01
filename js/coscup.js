@@ -1,10 +1,10 @@
 function init_jarallax(jarallax) {
   
   jarallax.setDefault('h2, #p1, #p2, #p3, #next', {opacity:'0'});
-  jarallax.setDefault('#p1, #p2, #p3', {marginLeft:'-1000px'});
+  jarallax.setDefault('#p1, #p2, #p3', {marginLeft:'-100rem'});
   
-  jarallax.addAnimation('#head1',[{progress: "0%", left:"-800px"}, {progress: "10%", left: "100px"}]);
-  jarallax.addAnimation('#head1',[{progress: "10%", left:"100px"}, {progress: "40%", left: "150px"}]);
+  jarallax.addAnimation('#head1',[{progress: "0%", left:"-80rem"}, {progress: "10%", left: "10rem"}]);
+  jarallax.addAnimation('#head1',[{progress: "10%", left:"10rem"}, {progress: "40%", left: "15rem"}]);
   jarallax.addAnimation('#head1',[{progress: "0%", opacity:"1"}, {progress: "30%", opacity:"1"}]);
   jarallax.addAnimation('#head1',[{progress: "30%", opacity:"1"}, {progress: "40%", opacity:"0"}]);
 
@@ -14,11 +14,11 @@ function init_jarallax(jarallax) {
   jarallax.addAnimation('#p1',[{progress: "15%", marginLeft:"0"}, {progress: "40%"}]);
 
   jarallax.addAnimation('#next',[{progress: "20%", opacity:"0"}, {progress: "30%", opacity:"1"}]);
-  jarallax.addAnimation('#next',[{progress: "20%", top:"300px"}, {progress: "30%", top:"400px"}]);
+  jarallax.addAnimation('#next',[{progress: "20%", top:"30rem"}, {progress: "30%", top:"40rem"}]);
   jarallax.addAnimation('#next',[{progress: "30%", opacity:"1"}, {progress: "40%", opacity:"0"}]);
   
-  jarallax.addAnimation('#head2',[{progress: "30%", left:"-800px"}, {progress: "40%", left: "100px"}]);
-  jarallax.addAnimation('#head2',[{progress: "40%", left:"100px"}, {progress: "70%", left: "150px"}]);
+  jarallax.addAnimation('#head2',[{progress: "30%", left:"-80rem"}, {progress: "40%", left: "10rem"}]);
+  jarallax.addAnimation('#head2',[{progress: "40%", left:"10rem"}, {progress: "70%", left: "15rem"}]);
   jarallax.addAnimation('#head2',[{progress: "30%", opacity:"1"}, {progress: "60%", opacity:"1"}]);
   jarallax.addAnimation('#head2',[{progress: "60%", opacity:"1"}, {progress: "70%", opacity:"0"}]);
 
@@ -27,8 +27,8 @@ function init_jarallax(jarallax) {
   jarallax.addAnimation('#p2',[{progress: "60%", opacity:"1"}, {progress: "70%", opacity:"0"}]);     
   jarallax.addAnimation('#p2',[{progress: "45%", marginLeft:"0"}, {progress: "70%"}]);
   
-  jarallax.addAnimation('#head3',[{progress: "60%", left:"-800px"}, {progress: "70%", left: "100px"}]);
-  jarallax.addAnimation('#head3',[{progress: "70%", left:"100px"}, {progress: "100%", left: "150px"}]);
+  jarallax.addAnimation('#head3',[{progress: "60%", left:"-80rem"}, {progress: "70%", left: "10rem"}]);
+  jarallax.addAnimation('#head3',[{progress: "70%", left:"10rem"}, {progress: "100%", left: "15rem"}]);
   jarallax.addAnimation('#head3',[{progress: "60%", opacity:"1"}, {progress: "100%", opacity:"1"}]);
   
   jarallax.addAnimation('#p3',[{progress: "75%", opacity:"0"}, {progress: "80%", opacity:"1"}]);
@@ -54,7 +54,7 @@ function init_image_cloud(jarallax) {
     },
     photoListType: 'flickr',
     onDone: function() {
-      jarallax.jumpToProgress(0.3, 2000, 24);
+      jarallax.jumpToProgress(0.3, 1000, 24);
     },
     shuffle: false
   };
