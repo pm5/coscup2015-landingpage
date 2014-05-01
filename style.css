@@ -57,41 +57,34 @@ body ul, body li {
   position: fixed;
   width: 100%;
   height: 100%;
-  background:url(images/background.png);
+  background:url("images/background.png");
 }
 
 .fallback .content {
-  background:url(images/background_tablet.png);
+  background:url("images/background_tablet.png");
 }
 
 .header {
   width: 100%;
-  height: 5rem;
   background: #96E9EE;
   border-bottom: 0.2rem solid black;
-  position: relative;
-  padding-top: 0.5rem;
+  padding: 1rem 0;
   color: #333;
-}
-
-#title {
   font-size: 2.2rem;
-  margin-top: 0.5rem;
+  font-weight: bold;
 }
 
 #logo {
-  width: 9rem;
+  width: 10rem;
   height: 3.3rem;
   float: left;
-  background: url(images/logo.png) no-repeat;
-  margin-right: 2rem;
+  background: url("images/logo.png") no-repeat 0.5rem 0;
+  margin-right: 1rem;
 }
 
 #sharing {
-  position: absolute;
   font-size: 1.6rem;
-  right: 1.5rem;
-  top: 1.5rem;
+  float: right;
 }
 
 #sharing li {
@@ -126,6 +119,7 @@ body ul, body li {
   left: 4rem;
 }
 
+
 #call-for-action li {
   float: left;
   margin: 0 3rem;
@@ -139,9 +133,13 @@ body ul, body li {
   display: block;
 }
 
-#call-for-action li a:hover {
+#call-for-action li a:hover, .fallback #call-for-action li a {
   background: black;
   color: #96E9EE;
+}
+
+.fallback #photos {
+  display: none;
 }
 
 #photos {
@@ -193,25 +191,46 @@ body ul, body li {
   color: #3DA550;
 }
 
-
-@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
-  .content {
-    background:url(images/background_tablet.png);
-  }
+@media screen and (min-device-width: 1100px), screen and (min-width: 1100px) {
   #sharing {
-    top: 6rem;
-  }
-  #call-for-action li a {
-    background: black;
-    color: #96E9EE;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
   }
 }
 
-@media screen and (max-device-width: 470px), screen and (max-width: 470px) {
-  html {
-    font-size: 6px;
+@media screen and (max-device-width: 710px), screen and (max-width: 710px) {
+  #call-for-action {
+    font-size: 2rem;
+    left: 2rem;
   }
-  .content {
-    background:url(images/background_phone.png);
+  #call-for-action li {
+    margin: 0 1rem;
+    width: 23rem;
+  }
+}
+
+@media screen and (max-device-width: 533px), screen and (max-width: 533px) {
+  .fallback .content {
+    background:url("images/background_phone.png");
+  }
+
+  .fallback .header {
+    font-size: 1.6rem;
+  }
+
+  #sharing span {
+    display: none;
+  }
+
+  #call-for-action {
+    width: calc(100%);
+    min-width: 32rem;
+  }
+
+  #call-for-action li {
+    margin: 1rem auto;
+    float: none;
+    line-height: 4rem;
   }
 }
