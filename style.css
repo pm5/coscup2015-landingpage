@@ -215,15 +215,31 @@ body ul, body li {
     background:url("images/background_phone.png");
   }
 
-  .fallback .header {
-    font-size: 1.6rem;
+  .header {
+    height: 3rem;
+  }
+
+  .header span {
+    display: none;
+  }
+
+  #sharing {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
   }
 
   #sharing span {
     display: none;
   }
 
+  #info {
+    top: 10rem;
+  }
+
   #call-for-action {
+    left: 0rem;
+    top: 30rem;
     width: calc(100%);
     min-width: 32rem;
   }
@@ -232,5 +248,10 @@ body ul, body li {
     margin: 1rem auto;
     float: none;
     line-height: 4rem;
+  }
+  #archives {
+    top: 45rem;
+    width: calc(100%);
+    min-width: 30rem;
   }
 }
