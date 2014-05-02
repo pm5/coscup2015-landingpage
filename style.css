@@ -45,6 +45,7 @@ body ul, body li {
 #sharing {
   font-size: 1.6rem;
   float: right;
+  margin-top: 0.9rem;
 }
 
 #sharing li {
@@ -152,19 +153,12 @@ body ul, body li {
   color: #3DA550;
 }
 
-@media screen and (min-device-width: 1100px), screen and (min-width: 1100px) {
-  #sharing {
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
-  }
-}
-
 @media screen and (max-device-width: 710px), screen and (max-width: 710px) {
   #call-for-action {
     font-size: 2rem;
     left: 2rem;
   }
+
   #call-for-action li {
     margin: 0 1rem;
     width: 23rem;
@@ -184,23 +178,13 @@ body ul, body li {
     display: none;
   }
 
-  #sharing {
-    position: absolute;
-    right: 1rem;
-    top: 1.5rem;
-  }
-
-  #sharing span {
-    display: none;
-  }
-
   #info {
-    top: 10rem;
+    top: 5rem;
   }
 
   #call-for-action {
     left: 0rem;
-    top: 27rem;
+    top: 19rem;
     width: calc(100%);
     min-width: 32rem;
   }
@@ -210,6 +194,7 @@ body ul, body li {
     float: none;
     line-height: 4rem;
   }
+
   #archives {
     top: 40rem;
   }
