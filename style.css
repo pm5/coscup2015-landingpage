@@ -31,9 +31,11 @@ body ul, body li {
 .header {
   width: 100%;
   background: #96E9EE;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 2px solid black;
+  padding: 10px 0;
   padding: 1rem 0;
   color: #333;
+  font-size: 22px;
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -43,25 +45,32 @@ body ul, body li {
 }
 
 #logo {
+  width: 100px;
   width: 10rem;
+  height: 33px;
   height: 3.3rem;
   float: left;
-  background: url("images/logo.png") no-repeat 0.5rem 0;
+  background: url("images/logo.png") no-repeat 5px 0;
+  margin-right: 10px;
   margin-right: 1rem;
 }
 
 #sharing {
+  font-size: 16px;
   font-size: 1.6rem;
   float: right;
-  margin-top: 0.9rem;
+  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 #sharing li {
   float: left;
+  margin-right: 8px;
   margin-right: 0.8rem;
 }
 
 #sharing span {
+  padding-left: 5px;
   padding-left: 0.5rem;
 }
 
@@ -73,26 +82,35 @@ body ul, body li {
 
 #info {
   font-family: monospace;
+  font-size: 20px;
   font-size: 2rem;
+  padding: 10px 20px;
   padding: 1rem 2rem;
   position: absolute;
-  border-radius: 0.3rem;
+  border-radius: 3px;
+  top: 185px;
   top: 18.5rem;
+  background: #333;
   background: rgba(33, 33, 33, 0.9);
   color: white;
 }
 
 #call-for-action {
+  font-size: 20px;
   font-size: 2rem;
   position: absolute;
+  top: 493px;
   top: 49.3rem;
+  left: 40px;
   left: 4rem;
 }
 
 
 #call-for-action li {
   float: left;
+  margin: 0 30px;
   margin: 0 3rem;
+  width: 270px;
   width: 27rem;
   border: 1px solid #000000;
 }
@@ -115,6 +133,7 @@ body ul, body li {
 #photos {
   position: absolute;
   width: 60%;
+  min-width: 750px;
   min-width: 75rem;
   top: 0; 
   bottom: -10%;
@@ -145,9 +164,12 @@ body ul, body li {
 
 #archives {
   position: absolute;
+  top: 600px;
   top: 60rem;
+  left: 10px;
   left: 1rem;
   color: black;
+  font-size: 16px;
   font-size: 1.6rem;
   color: #96E9EE;
 }
@@ -163,12 +185,16 @@ body ul, body li {
 
 @media screen and (max-device-width: 710px), screen and (max-width: 710px) {
   #call-for-action {
+    font-size: 20px;
     font-size: 2rem;
+    left: 20px;
     left: 2rem;
   }
 
   #call-for-action li {
+    margin: 0 10px;
     margin: 0 1rem;
+    width: 230px;
     width: 23rem;
   }
 }
@@ -179,6 +205,7 @@ body ul, body li {
   }
 
   .header {
+    height: 30px;
     height: 3rem;
   }
 
@@ -187,23 +214,29 @@ body ul, body li {
   }
 
   #info {
+    top: 50px;
     top: 5rem;
   }
 
   #call-for-action {
-    left: 0rem;
+    left: 0;
+    top: 190px;
     top: 19rem;
     width: calc(100%);
+    min-width: 320px;
     min-width: 32rem;
   }
 
   #call-for-action li {
+    margin: 10px auto;
     margin: 1rem auto;
     float: none;
+    line-height: 40px;
     line-height: 4rem;
   }
 
   #archives {
+    top: 400px;
     top: 40rem;
   }
 }
