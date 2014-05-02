@@ -1,4 +1,9 @@
-function init_image_cloud() {
+jQuery(function ($) {
+  if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|B2G)/)) {
+    $(document.body).addClass('fallback');
+    return; // No $.imageCloud
+  }
+
   var options = {
     gridSize: 4,
     beforeImageLoad: function ($img, r, R) {
@@ -19,12 +24,4 @@ function init_image_cloud() {
   };
 
   $('#photos').imageCloud(options);
-}
-
-jQuery(function ($) {
-  if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|B2G)/)) {
-    $(document.body).addClass('fallback');
-    return; // No $.imageCloud
-  }
-  init_image_cloud();
 });
