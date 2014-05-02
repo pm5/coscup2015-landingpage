@@ -1,5 +1,5 @@
 jQuery(function ($) {
-  if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|B2G)/)) {
+  if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|Mobile)/)) {
     $(document.body).addClass('fallback');
     return; // No $.imageCloud
   }
