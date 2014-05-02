@@ -1,7 +1,8 @@
 {
   "locales": [
     "en-US",
-    "zh-TW"
+    "zh-TW",
+    "zh-CN"
   ],
   "default_locale": "en-US",
   "resources": [
