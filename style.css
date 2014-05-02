@@ -18,6 +18,10 @@ body a {
   text-decoration: none;
 }
 
+body img { 
+  border: none; 
+}
+
 body ul, body li {
   list-style: none;
   margin: 0;
