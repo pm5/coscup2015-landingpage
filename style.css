@@ -96,8 +96,8 @@ body ul, body li {
 }
 
 #call-for-action {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   position: absolute;
   top: 493px;
   top: 49.3rem;
@@ -108,10 +108,10 @@ body ul, body li {
 
 #call-for-action li {
   float: left;
-  margin: 0 30px;
-  margin: 0 3rem;
-  width: 270px;
-  width: 27rem;
+  margin: 0 5px;
+  margin: 0 0.5rem;
+  width: 250px;
+  width: 25rem;
   border: 1px solid #000000;
 }
 
@@ -188,10 +188,10 @@ body ul, body li {
   color: #3DA550;
 }
 
-@media screen and (max-device-width: 710px), screen and (max-width: 710px) {
+@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
   #call-for-action {
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     left: 20px;
     left: 2rem;
   }
@@ -199,8 +199,8 @@ body ul, body li {
   #call-for-action li {
     margin: 0 10px;
     margin: 0 1rem;
-    width: 230px;
-    width: 23rem;
+    width: 220px;
+    width: 22rem;
   }
 }
 
