@@ -176,15 +176,35 @@ body ul, body li {
   color: black;
   font-size: 16px;
   font-size: 1.6rem;
-  color: #96E9EE;
+  color: #527F82;
 }
 
 #archives a {
-  color: #96E9EE;
+  color: #527F82;
   font-weight: bold;
 }
 
 #archives a:hover {
+  color: #3DA550;
+}
+
+#languages {
+  position: absolute;
+  top: 630px;
+  top: 63rem;
+  left: 10px;
+  left: 1rem;
+  color: black;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+#languages a {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#languages a:hover {
   color: #3DA550;
 }
 
@@ -241,7 +261,12 @@ body ul, body li {
   }
 
   #archives {
-    top: 400px;
-    top: 40rem;
+    top: 380px;
+    top: 38rem;
+  }
+
+  #languages {
+    top: 430px;
+    top: 43rem;
   }
 }
