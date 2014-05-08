@@ -95,6 +95,21 @@ body ul, body li {
   color: white;
 }
 
+#promote {
+  font-size: 18px;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 463px;
+  top: 46.3rem;
+  left: 40px;
+  left: 4rem;
+  color: red;
+}
+
+#promote:before {
+  content: '*';
+}
+
 #call-for-action {
   font-size: 18px;
   font-size: 1.8rem;
@@ -209,6 +224,13 @@ body ul, body li {
 }
 
 @media screen and (max-device-width: 768px), screen and (max-width: 768px) {
+  #promote {
+    font-size: 16px;
+    font-size: 1.6rem;
+    left: 20px;
+    left: 2rem;
+  }
+
   #call-for-action {
     font-size: 16px;
     font-size: 1.6rem;
@@ -241,6 +263,13 @@ body ul, body li {
   #info {
     top: 50px;
     top: 5rem;
+  }
+
+  #promote {
+    left: 15px;
+    left: 1.5rem;
+    top: 150px;
+    top: 15rem;
   }
 
   #call-for-action {

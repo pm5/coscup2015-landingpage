@@ -6,3 +6,6 @@
 <callForProposal "講者募集">
 <callForSponsor "贊助商募集">
 <callForVIP "貢獻者專案">
+<cfpPromote """
+    講者報名將於 5 月 12 日截止，立即前往 <a href="http://coscup2014-program.kktix.cc/events/cfp">講者募集頁面</a></span>
+""">
