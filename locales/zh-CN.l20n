@@ -2,10 +2,16 @@
 <coscup2015 "2015 COSCUP 开源人年会">
 <slogan "软硬兼施的首创开源革命">
 <date "2015年8月15日 - 2015年8月16日">
-<location "台北南港中央研究院人文社会科学馆">
+<location "台北南港 中央研究院 學術活動中心 & 人文社會科學館">
 <callForProposal "讲者募集">
 <callForSponsor "赞助商募集">
 <callForVIP "贡献者专案">
-<cfpPromote """
-    讲者报名将于5月12日截止、立即前往 <a href="http://coscup2015-program.kktix.cc/events/cfp">讲者募集页面</a></span>
-""">
+<askQuestions "询问活动细节">
+<blog "最新消息">
+<sponsors "赞助商">
+<diamondSponsors "钻石级">
+<goldSponsors "黄金级">
+<silverSponsors "白银级">
+<bronzeSponsors "青铜级">
+<partnersSponsors "协办">
+<mediaSponsors "媒体协力">

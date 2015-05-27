@@ -7,6 +7,11 @@
 <callForSponsor "Call for Sponsor">
 <callForVIP "Contributor Registration">
 <askQuestions "Questions">
-<cfpPromote """
-    Proposal submission due date is 2015.5.12, check <a href="http://coscup2015-program.kktix.cc/events/cfp">registration page</a> now!</span>
-""">
+<blog "News">
+<sponsors "Sponsors">
+<diamondSponsors "Diamond">
+<goldSponsors "Gold">
+<silverSponsors "Sliver">
+<bronzeSponsors "Bronze">
+<partnersSponsors "Partners">
+<mediaSponsors "Media Partners">
